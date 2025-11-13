@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Miisu",
+    "type": "cat",
+    "age": 3,
+    "breed": "European shorthair",
+    "description": "Suloinen ja utelias kissa.",
+    "image": "/images/cat.svg",
+    "status": "available"
+  },
+  {
+    "id": 2,
+    "name": "Rekku",
+    "type": "dog",
+    "age": 5,
+    "breed": "Labrador",
+    "description": "Ystävällinen ja energinen koira.",
+    "image": "/images/dog.svg",
+    "status": "available"
+  },
+  {
+    "id": 3,
+    "name": "Hippu",
+    "type": "hippo",
+    "age": 12,
+    "breed": "Pygmy Hippopotamus",
+    "description": "Rauhallinen ja lempeä virtahepo.",
+    "image": "/images/hippo.svg",
+    "status": "available"
+  },
+  {
+    "id": 4,
+    "name": "Mauno",
+    "type": "monkey",
+    "age": 4,
+    "breed": "Capuchin",
+    "description": "Leikkisä ja älykäs apina.",
+    "image": "/images/monkey.svg",
+    "status": "available"
+  },
+  {
+    "id": 5,
+    "name": "Pöllö",
+    "type": "owl",
+    "age": 2,
+    "breed": "Snowy owl",
+    "description": "Viisas ja rauhallinen pöllö.",
+    "image": "/images/owl.svg",
+    "status": "available"
+  },
+  {
+    "id": 6,
+    "name": "Nipsu",
+    "type": "rat",
+    "age": 1,
+    "breed": "Fancy rat",
+    "description": "Pieni ja seurallinen rotta.",
+    "image": "/images/rat.svg",
+    "status": "available"
+  },
+  {
+    "id": 7,
+    "name": "Hämis",
+    "type": "spider",
+    "age": 1,
+    "breed": "Tarantula",
+    "description": "Hiljainen ja rauhallinen tarantula.",
+    "image": "/images/spider.svg",
+    "status": "available"
+  }
+]

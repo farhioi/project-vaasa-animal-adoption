@@ -1,0 +1,42 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    environment:
+      - VITE_APP_API_URL=http://localhost:8080
+    depends_on:
+      - servera
+    networks:
+      - appnet
+
+  servera:
+    build:
+      context: ./server_a
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - SERVER_B_URL=http://serverb:8090
+    depends_on:
+      - serverb
+    networks:
+      - appnet
+
+  serverb:
+    build:
+      context: ./server_b
+      dockerfile: Dockerfile
+    ports:
+      - "8090:8090"
+    environment:
+      - PORT=8090
+    networks:
+      - appnet
+
+networks:
+  appnet:
+    driver: bridge

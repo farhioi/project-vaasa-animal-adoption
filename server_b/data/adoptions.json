@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "animalId": 2,
+    "animalName": "Rekku",
+    "applicantName": "Anna Virtanen",
+    "email": "anna.virtanen@example.com",
+    "phone": "+358401234567",
+    "message": "Olen etsinyt ystävällistä koiraa, joka sopii lapsiperheeseen.",
+    "date": "2025-11-12T10:15:00Z",
+    "status": "pending"
+  },
+  {
+    "id": 2,
+    "animalId": 1,
+    "animalName": "Miisu",
+    "applicantName": "Matti Korhonen",
+    "email": "matti.korhonen@example.com",
+    "phone": "+358401112233",
+    "message": "Rakastan kissoja ja haluaisin tarjota Miisulle lämpimän kodin.",
+    "date": "2025-11-12T10:30:00Z",
+    "status": "approved"
+  }
+]

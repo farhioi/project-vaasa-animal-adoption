@@ -1,0 +1,80 @@
+/* Tausta ja yleinen typografia */
+:root{
+  --bg:#0f172a;         /* tummempi tausta (mockupissa musta) */
+  --panel:#ffffff;      /* valkoinen “ikkuna” */
+  --border:#e5e7eb;
+  --text:#111827;
+  --muted:#6b7280;
+  --primary:#2563eb;
+  --success:#10b981;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);font-family:Segoe UI,Roboto,Arial,sans-serif;color:var(--text);}
+
+.site{min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:28px 12px;}
+
+/* Selaimen yläpalkki mockupin tyyliin */
+.browser{
+  width:min(1100px,95vw);
+  height:44px;
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:12px 12px 0 0;
+  display:flex;align-items:center;gap:12px;padding:0 12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+.browser.small{width:min(900px,95vw);margin:8px auto 12px;}
+.dots{display:flex;gap:6px}
+.dots span{width:10px;height:10px;border-radius:50%;background:#f87171;}
+.dots span:nth-child(2){background:#fbbf24}
+.dots span:nth-child(3){background:#34d399}
+.url{
+  flex:1;height:26px;border:1px solid var(--border);
+  background:#f8fafc;border-radius:8px;
+  display:flex;align-items:center;padding:0 10px;font-size:13px;color:#374151;
+}
+
+/* Valkoinen “ikkuna-alue” */
+.frame{
+  width:min(1100px,95vw);
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-top:none;border-radius:0 0 12px 12px;
+  padding:18px;
+  box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+.page{padding:10px 6px;}
+.title{margin:6px 6px 16px;font-weight:700}
+
+/* Korttiruutu etusivulle */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.card{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff}
+.card img{width:100%;height:150px;object-fit:cover;background:#eef2ff}
+.card-body{padding:12px}
+.muted{color:var(--muted)}
+.btn-row{display:flex;gap:8px;margin-top:8px}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:8px 12px;border:1px solid var(--border);border-radius:8px;
+  text-decoration:none;color:#111827;background:#fff;cursor:pointer;font-weight:600;
+}
+.btn:hover{background:#f3f4f6}
+.btn.primary{background:var(--primary);color:#fff;border-color:transparent}
+.btn.primary:hover{filter:brightness(.95)}
+.btn.success{background:var(--success);color:#fff;border-color:transparent}
+.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#e5e7eb;color:#374151}
+
+/* Detaljisivu */
+.details{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start;margin-top:6px}
+.details img{width:100%;border:1px solid var(--border);border-radius:12px}
+.details-body p{margin:.2rem 0}
+
+/* Kiitossivu */
+.thanks{display:flex;flex-direction:column;align-items:center;gap:6px;padding:24px 6px}
+.emoji{font-size:64px}
+
+/* Mobiili */
+@media (max-width:860px){
+  .details{grid-template-columns:1fr}
+}
