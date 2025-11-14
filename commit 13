@@ -1,1 +1,15 @@
 Parannettu responsiivisuutta ja sivujen asettelua
+@media (max-width: 800px) {
+  .details {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .big-img {
+    margin: 0 auto;
+  }
+
+  .container {
+    padding-inline: 16px;
+  }
+}
