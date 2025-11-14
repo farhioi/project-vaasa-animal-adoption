@@ -1,1 +1,18 @@
 Lisätty logo, navigaatiopalkki ja footer
+<header className="topbar">
+  <div className="topbar-inner container">
+    <div className="logo">
+      <span className="logo-icon">🐾</span>
+      <span className="logo-text">Vaasan eläinadoptio</span>
+    </div>
+
+    <nav className="nav">
+      <Link to="/">Etusivu</Link>
+    </nav>
+  </div>
+</header>
+
+<footer className="site-footer">
+  Made with <span className="heart">❤️</span> Vaasan Eläinsuoja ry by Farhio & Gabriela
+</footer>
+
