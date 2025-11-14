@@ -1,1 +1,13 @@
  Parannettu eläinkortteja ja pienennetty kuvia
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;      /* pienennetty kuva */
+  object-fit: contain;
+  padding: 18px;
+}
