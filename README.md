@@ -111,7 +111,7 @@ Koko UI on toteutettu yhtenäisenä “pinkki vibe” -teemana
 ### Esivaatimukset
 
 - Docker Desktop (Windows)
-- Git kloonattu tähän hakemistoon
+Github (kommunikaatio varten)
 
 ### 3.1. Ensimmäinen käynnistys
 
