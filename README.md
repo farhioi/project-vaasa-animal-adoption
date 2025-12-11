@@ -1,5 +1,4 @@
-# Vaasan eläinadoptio – ryhmätyö 
-- Farhio & Gabriela
+# Vaasan eläinadoptio
 
 Digitaalinen adoptiosovellus Vaasan Eläinsuoja ry:lle.  
 Sovelluksen avulla käyttäjä voi:
